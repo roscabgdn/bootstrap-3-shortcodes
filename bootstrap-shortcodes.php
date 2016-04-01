@@ -962,7 +962,7 @@ class BoostrapShortcodes {
       '<span class="%s"%s>%s</span>',
       esc_attr( $class ),
       ( $data_props ) ? ' ' . $data_props : '',
-      do_shortcode( $content )
+      wpautop( do_shortcode( $content ) )
     );
   }
 
